@@ -365,10 +365,10 @@
                                     onchange={() => updateDamages()}
                                     img="/rs-rot/effect_icons/Cryptbloom_helm.png"
                                 />
-                                <Select
-                                    bind:setting={settings[SETTINGS.SLAYER_SIGIL]}
+                                <Checkbox
+                                    bind:setting={settings[SETTINGS.DRAGON_SLAYER_ABILITY]}
                                     onchange={() => updateDamages()}
-                                    img="/rs-rot/effect_icons/Undead_slayer_sigil_detail.png"
+                                    img="/rs-rot/ability_icons/special/Dragon_Slayer_(ability).png"
                                 />
                                 <Number
                                     bind:setting={settings[SETTINGS.NOPE]}

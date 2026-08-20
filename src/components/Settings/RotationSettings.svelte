@@ -533,6 +533,14 @@ import { getEquipmentIcon, isCustomEquipment } from '$lib/data/equipment';
                             onchange={updateDamages}
                         />
                         <ToggleButton
+                            bind:setting={settings[SETTINGS.KWUARM_INCENSE]}
+                            img="/rs-rot/effect_icons/Kwuarm_incense_sticks.png"
+                            title="Kwuarm Incense (click to cycle)"
+                            cycle={[SETTINGS.INCENSE_VALUES.NONE, SETTINGS.INCENSE_VALUES.LVL1, SETTINGS.INCENSE_VALUES.LVL2, SETTINGS.INCENSE_VALUES.LVL3, SETTINGS.INCENSE_VALUES.LVL4]}
+                            borderColor={activeStyleColor}
+                            onchange={updateDamages}
+                        />
+                        <ToggleButton
                             bind:setting={settings[SETTINGS.NOPE]}
                             img="/rs-rot/effect_icons/nopenopenope.png"
                             title="Nope nope nope"

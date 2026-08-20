@@ -554,7 +554,7 @@ function set_min_var(settings: Record<string, any>, dmgObject: DamageObject) {
                     poison_tier = Math.min(5, Math.max(2, poison_tier + 1));
                 }
                 let multi = 1 + 0.25 * (poison_tier - 1);
-                multi *= 1 + 0.03 * settings[SETTINGS.BIK_STACKS];
+                multi *= 1 + 0.03 * settings[SETTINGS.BIK_STACKS] + 0.025 * settings[SETTINGS.KWUARM_INCENSE];
                 distribution.minHit = distribution.minHit * multi;
                 distribution.varHit = distribution.varHit * multi;
             }
