@@ -323,7 +323,7 @@
                                         {:else if bound && bound.length > 0}
                                             <div class="kb-icons">
                                                 {#each bound.slice(0, 2) as b}
-                                                    <img src={b.icon} alt={b.title} class="kb-abil-icon" />
+                                                    <img src={b.icon} alt={b.title} class="kb-abil-icon ability-icon" />
                                                 {/each}
                                                 {#if bound.length > 2}
                                                     <span class="kb-overflow">+{bound.length - 2}</span>
