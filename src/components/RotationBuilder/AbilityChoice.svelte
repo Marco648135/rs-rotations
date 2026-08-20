@@ -7,7 +7,7 @@
 
     import { getStyleColor } from '$lib/utils/colors';
     import { groupAbilitiesByType } from '$lib/utils/abilityClassifier';
-    import { ownedItemsStore } from '$lib/stores/ownedItemsStore.svelte.js';
+    import { ownedItemsStore } from '$lib/stores/ownedItemsStore.svelte.ts';
     import { getAbilityClassification, getAbilityType } from '$lib/types/AbilityTypes';
 
     $: grouped = groupAbilitiesByType(abilities);

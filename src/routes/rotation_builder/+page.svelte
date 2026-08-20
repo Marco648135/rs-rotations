@@ -17,10 +17,10 @@
     import KeypressOutputModal from '../../components/RotationBuilder/KeypressOutputModal.svelte';
     import { allExtraActions } from '$lib/special/abilities';
     import * as eventHandlers from '$lib/utils/rotationEventHandlers';
-    import { uiStore, uiActions } from '$lib/stores/uiStore.svelte.js';
-    import { notificationStore, notifActions } from '$lib/stores/notificationStore.svelte.js';
-    import { rotationStore } from '$lib/stores/rotationStore.svelte.js';
-    import { settingsStore } from '$lib/stores/settingsStore.svelte.js';
+    import { uiStore, uiActions } from '$lib/stores/uiStore.svelte.ts';
+    import { notificationStore, notifActions } from '$lib/stores/notificationStore.svelte.ts';
+    import { rotationStore } from '$lib/stores/rotationStore.svelte.ts';
+    import { settingsStore } from '$lib/stores/settingsStore.svelte.ts';
     import { getBossPresetWithEnrage, type BossAttack, type BossAttackPattern } from '$lib/data/bosses/boss_presets';
     import { suggestNextAbility, resolveTumekensAsphyxiate, type AbilitySuggestion } from '$lib/calc/rotation_builder/rotation-damage-calculator';
     import type { CombatStyle } from '$lib/types/AbilityTypes';

@@ -29,7 +29,7 @@
     import ActionIcon from '$components/UI/ActionIcon.svelte';
     import { perks as perkDefs } from '$lib/data/perks';
     import { STYLE_COLORS } from '$lib/utils/colors';
-    import { ownedItemsStore } from '$lib/stores/ownedItemsStore.svelte.js';
+    import { ownedItemsStore } from '$lib/stores/ownedItemsStore.svelte.ts';
     import { weapons } from '$lib/data/weapons';
     import { coerceEquipmentValue, isCustomEquipment, migrateEquipmentSettings } from '$lib/data/equipment';
 

@@ -4,11 +4,11 @@
     import { allExtraActions, gearSwaps } from '$lib/special/abilities';
     import { getSettingsKeyForItem, getItemForValue } from '$lib/calc/rotation_builder/gear-registry';
     import { SETTINGS } from '$lib/calc/settings_rb';
-    import { settingsStore, initializeSettings } from '$lib/stores/settingsStore.svelte.js';
-    import { rotationStore } from '$lib/stores/rotationStore.svelte.js';
+    import { settingsStore, initializeSettings } from '$lib/stores/settingsStore.svelte.ts';
+    import { rotationStore } from '$lib/stores/rotationStore.svelte.ts';
     import { getEquipmentIcon, isCustomEquipment } from '$lib/data/equipment';
     import ActionIcon from '$components/UI/ActionIcon.svelte';
-    import { ownedItemsStore } from '$lib/stores/ownedItemsStore.svelte.js';
+    import { ownedItemsStore } from '$lib/stores/ownedItemsStore.svelte.ts';
     import { perks as perkDefs } from '$lib/data/perks';
     import { bossPresets, getBossPresetWithEnrage } from '$lib/data/bosses/boss_presets';
     import { weapons } from '$lib/data/weapons';

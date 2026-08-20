@@ -7,8 +7,8 @@
     import RotationSettings from '$components/Settings/RotationSettings.svelte';
     import GearManager from '$components/Settings/GearManager.svelte';
 
-    import { rotationStore } from '$lib/stores/rotationStore.svelte.js';
-    import { initializeSettings, settingsStore } from '$lib/stores/settingsStore.svelte.js';
+    import { rotationStore } from '$lib/stores/rotationStore.svelte.ts';
+    import { initializeSettings, settingsStore } from '$lib/stores/settingsStore.svelte.ts';
     import { SETTINGS } from '$lib/calc/settings_rb';
 
     initializeSettings();

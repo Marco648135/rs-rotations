@@ -1,5 +1,5 @@
 <script>
-    import { ownedItemsStore, ownedItemsActions } from '$lib/stores/ownedItemsStore.svelte.js';
+    import { ownedItemsStore, ownedItemsActions } from '$lib/stores/ownedItemsStore.svelte.ts';
     import { getItemsForSlot } from '$lib/calc/rotation_builder/gear-registry';
     import { GearSlots } from '$lib/calc/rotation_builder/gear';
     import { perks, getPerksForSlot } from '$lib/data/perks';
