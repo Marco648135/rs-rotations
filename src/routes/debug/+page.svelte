@@ -158,7 +158,7 @@
                                 {/each}
                             </select>
                             {#if abils[selectedAbility]?.icon}
-                                <img src={abils[selectedAbility].icon} alt="" class="w-8 h-8" />
+                                <img src={abils[selectedAbility].icon} alt="" class="w-8 h-8 ability-icon" />
                             {/if}
                         </div>
                     {:else}
@@ -182,7 +182,7 @@
                                 >
                                     <span class="mini-tick-num">{i}</span>
                                     {#if abil && abils[abil]}
-                                        <img src={abils[abil].icon} alt={abils[abil].title} class="mini-icon" />
+                                        <img src={abils[abil].icon} alt={abils[abil].title} class="mini-icon ability-icon" />
                                     {/if}
                                 </button>
                             {/each}
